@@ -15,8 +15,8 @@ class GetLatestListingsUseCase {
                 location = "Wellington",
                 title = "$it. ***NEW*** Randomly generated listing",
                 isClassified = listOf(true, false).random(),
-                priceDisplay = "${(1..999).random()}.00",
-                buyNowPrice = "${(1..999).random()}.00",
+                priceDisplay = "$${(1..999).random()}.00",
+                buyNowPrice = "$${(1..999).random()}.00",
                 hasBuyNow = listOf(true, false).random()
             )
         }
