@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">TestMe</string>
+    <string name="bottom_nav_discover">Discover</string>
+    <string name="bottom_nav_watchlist">Watchlist</string>
+    <string name="bottom_nav_my_trade_me">My Trade Me</string>
+    <string name="action_search">Search</string>
+    <string name="action_cart">Cart</string>
+    <string name="error_message_generic">Oops! Something went wrong</string>
+    <string name="title_browse">Browse</string>
+    <string name="title_my_trade_me">My Trade Me</string>
+    <string name="title_watchlist">Watchlist</string>
+    <string name="label_no_reserve">No reserve</string>
+    <string name="label_buy_now">Buy Now</string>
+    <string name="label_asking_price">Asking price</string>
+</resources>
