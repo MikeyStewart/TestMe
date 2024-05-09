@@ -1,7 +1,7 @@
 # TestMe
 Submission for TradeMe tech test. A lightweight native Android app emulating the Trade Me yellow app. Currently doesn't hit the TM API but instead has randomly generated data accompanied by images of cute foxes.
 
-![Screenshot_20240509_220935_TestMe](https://github.com/MikeyStewart/TestMe/assets/22163261/fdd737dd-49b7-4041-8e2f-f8ba16aa394d)
+![Screenshot_20240509_224110_TestMe](https://github.com/MikeyStewart/TestMe/assets/22163261/f182ad37-e2f8-4315-8ae1-49fa57b8ca8b)
 
 ## Tech stack
 - Kotlin, Coroutines, Flow - async operations/events
