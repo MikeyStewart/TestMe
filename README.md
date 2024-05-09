@@ -16,11 +16,12 @@ Submission for TradeMe tech test. A lightweight native Android app emulating the
 Inspired by Clean Architecture, SOLID principles, and Google's recommendations to facilitate separation of concerns, testability, and maintainability.
 - MVVM
 - UseCases - representing business logic
-- Respository Pattern (TODO)
+- Repository Pattern (TODO)
 
 ## Future improvements
 - Dependency injection
 - Network/data layer
 	- Remote data source (TradeMe API)
 	- Caching
+- Move ListingCard into shared UI component package for reuse across features/screens
 - Plenty of room for general enhancements too!
