@@ -7,7 +7,6 @@ import com.stewart.mikey.testme.feature.discover.DiscoverRoute
 import com.stewart.mikey.testme.feature.mytrademe.MyTradeMeRoute
 import com.stewart.mikey.testme.feature.watchlist.WatchlistRoute
 
-// TODO: extract name and icon to string and drawable resources
 sealed class BottomNavItem(
     @StringRes val name: Int,
     @DrawableRes val icon: Int,

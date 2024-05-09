@@ -23,3 +23,4 @@ Inspired by Clean Architecture, SOLID principles, and Google's recommendations t
 - Network/data layer
 	- Remote data source (TradeMe API)
 	- Caching
+- Plenty of room for general enhancements too!
