@@ -1,0 +1,85 @@
+package com.stewart.mikey.testme.core.data
+
+import kotlinx.serialization.SerialName
+import kotlinx.serialization.Serializable
+
+@Serializable
+data class ListingResponse(
+    @SerialName("ListingId")
+    val listingId: Long,
+    @SerialName("Title")
+    val title: String,
+//    val category: String,
+//    val startPrice: Double,
+    @SerialName("BuyNowPrice")
+    val buyNowPrice: Double?,
+//    val startDate: String,
+//    val endDate: String,
+//    val isFeatured: Boolean,
+//    val hasGallery: Boolean,
+//    val isBold: Boolean,
+//    val isHighlighted: Boolean,
+//    val hasHomePageFeature: Boolean,
+//    val maxBidAmount: Double,
+//    val asAt: String,
+//    val categoryPath: String,
+    @SerialName("PictureHref")
+    val pictureHref: String?,
+//    val hasPayNow: Boolean,
+//    val isNew: Boolean,
+//    val regionId: Long,
+    @SerialName("Region")
+    val region: String,
+//    val suburbId: Long,
+//    val suburb: String,
+//    val pickupLocality: PickupLocality,
+//    val bidCount: Long,
+//    val isReserveMet: Boolean,
+//    val hasReserve: Boolean,
+    @SerialName("HasBuyNow")
+    val hasBuyNow: Boolean = false,
+//    val noteDate: String,
+//    val reserveState: Long,
+//    val attributes: List<Attribute>,
+    @SerialName("IsClassified")
+    val isClassified: Boolean = false,
+//    val openHomes: List<OpenHome>,
+//    val subtitle: String,
+//    val isBuyNowOnly: Boolean,
+//    val remainingGalleryPlusRelists: Long,
+//    val isOnWatchList: Boolean,
+//    val geographicLocation: GeographicLocation,
+    @SerialName("PriceDisplay")
+    val priceDisplay: String,
+//    val totalReviewCount: Long,
+//    val positiveReviewCount: Long,
+//    val hasFreeShipping: Boolean,
+//    val isClearance: Boolean,
+//    val wasPrice: Double,
+//    val percentageOff: Long,
+//    val branding: Branding,
+//    val isSuperFeatured: Boolean,
+//    val shortDescription: String,
+//    val photoUrls: List<String>,
+//    val promotionId: Long,
+//    val hasEmbeddedVideo: Boolean,
+//    val variantDefinitionSummary: VariantDefinitionSummary,
+//    val additionalData: AdditionalData,
+//    val listingExtras: List<String>,
+//    val isLoyaltyEligible: Boolean,
+//    val hasPing: Boolean,
+//    val storeBrandLogoUrl: String,
+//    val whyPayPrice: Double,
+//    val has3Dtour: Boolean,
+//    val shippingDetails: ShippingDetails,
+//    val priceType: Long,
+//    val hasSpecialOffer: Boolean,
+//    val newCarInformation: NewCarInformation,
+//    val memberDateJoined: String,
+//    val lastServiceReview: LastServiceReview,
+//    val sponsored: Sponsored,
+//    val motorsExternalMediaOverview: MotorsExternalMediaOverview,
+//    val listingPlatform: Long,
+//    val allowsPickups: Long,
+//    val searchResultAttributes: List<SearchResultAttribute>,
+)

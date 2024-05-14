@@ -1,8 +1,8 @@
 package com.stewart.mikey.testme
 
 import app.cash.turbine.test
-import com.stewart.mikey.testme.domain.GetLatestListingsUseCase
-import com.stewart.mikey.testme.domain.Listing
+import com.stewart.mikey.testme.core.domain.GetLatestListingsUseCase
+import com.stewart.mikey.testme.core.domain.Listing
 import com.stewart.mikey.testme.feature.discover.DiscoverUiState.Error
 import com.stewart.mikey.testme.feature.discover.DiscoverUiState.Loading
 import com.stewart.mikey.testme.feature.discover.DiscoverUiState.Success

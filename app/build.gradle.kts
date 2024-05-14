@@ -1,8 +1,17 @@
+import java.util.Properties
+
 plugins {
     alias(libs.plugins.androidApplication)
     alias(libs.plugins.jetbrainsKotlinAndroid)
     alias(libs.plugins.jetbrainsKotlinSerialization)
 }
+
+val localPropertiesFile = rootProject.file("local.properties")
+val localProperties = Properties()
+localProperties.load(localPropertiesFile.inputStream())
+
+val consumerKey: String = localProperties.getProperty("consumerKey")
+val consumerSecret: String = localProperties.getProperty("consumerSecret")
 
 android {
     namespace = "com.stewart.mikey.testme"
@@ -22,6 +31,10 @@ android {
     }
 
     buildTypes {
+        debug{
+            buildConfigField("String", "CONSUMER_KEY", consumerKey)
+            buildConfigField("String", "CONSUMER_SECRET", consumerSecret)
+        }
         release {
             isMinifyEnabled = false
             proguardFiles(
@@ -39,6 +52,7 @@ android {
     }
     buildFeatures {
         compose = true
+        buildConfig = true
     }
     composeOptions {
         kotlinCompilerExtensionVersion = "1.5.1"
@@ -63,6 +77,10 @@ dependencies {
     implementation(libs.androidx.navigation.compose)
     implementation(libs.kotlinx.serialization)
     implementation(libs.coil.compose)
+    implementation(libs.ktor.client.android)
+    implementation(libs.ktor.client.content.negotiation)
+    implementation(libs.ktor.client.auth)
+    implementation(libs.ktor.serialization.kotlinx.json)
     testImplementation(libs.junit)
     testImplementation(libs.cashapp.turbine)
     testImplementation(libs.mockk)

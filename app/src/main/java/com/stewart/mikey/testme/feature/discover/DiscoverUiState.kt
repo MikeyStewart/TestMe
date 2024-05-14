@@ -1,6 +1,6 @@
 package com.stewart.mikey.testme.feature.discover
 
-import com.stewart.mikey.testme.domain.Listing
+import com.stewart.mikey.testme.core.domain.Listing
 
 /**
  * A sealed hierarchy representing the state of the Discover screen.

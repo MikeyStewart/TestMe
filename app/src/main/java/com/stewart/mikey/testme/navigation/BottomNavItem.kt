@@ -3,6 +3,7 @@ package com.stewart.mikey.testme.navigation
 import androidx.annotation.DrawableRes
 import androidx.annotation.StringRes
 import com.stewart.mikey.testme.R
+import com.stewart.mikey.testme.core.navigation.NavigationRoute
 import com.stewart.mikey.testme.feature.discover.DiscoverRoute
 import com.stewart.mikey.testme.feature.mytrademe.MyTradeMeRoute
 import com.stewart.mikey.testme.feature.watchlist.WatchlistRoute

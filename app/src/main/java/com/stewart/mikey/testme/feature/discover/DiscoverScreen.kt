@@ -27,7 +27,7 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import com.stewart.mikey.testme.R
-import com.stewart.mikey.testme.domain.Listing
+import com.stewart.mikey.testme.core.domain.Listing
 import com.stewart.mikey.testme.feature.discover.DiscoverUiState.Error
 import com.stewart.mikey.testme.feature.discover.DiscoverUiState.Loading
 import com.stewart.mikey.testme.feature.discover.DiscoverUiState.Success
@@ -114,7 +114,7 @@ fun DiscoverScreenList(listings: List<Listing>) {
             .fillMaxSize()
             .background(MaterialTheme.colorScheme.background),
     ) {
-        items(listings) { listing ->
+        items(listings, key = { it.listingId }) { listing ->
             Column {
                 ListingCard(listing)
                 Divider()

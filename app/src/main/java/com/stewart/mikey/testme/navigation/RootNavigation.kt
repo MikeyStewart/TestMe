@@ -18,7 +18,10 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.rememberNavController
-import com.stewart.mikey.testme.domain.GetLatestListingsUseCase
+import com.stewart.mikey.testme.core.data.ListingsRepository
+import com.stewart.mikey.testme.core.domain.GetLatestListingsUseCase
+import com.stewart.mikey.testme.core.data.ApiService
+import com.stewart.mikey.testme.core.data.client
 import com.stewart.mikey.testme.feature.discover.DiscoverRoute
 import com.stewart.mikey.testme.feature.discover.DiscoverScreen
 import com.stewart.mikey.testme.feature.discover.DiscoverViewModel
@@ -38,7 +41,13 @@ fun RootNavigation() {
         MyTradeMeNavItem,
     )
     val navController = rememberNavController()
-    val discoverViewModel = DiscoverViewModel(GetLatestListingsUseCase()) // TODO: Implement DI
+    val discoverViewModel = DiscoverViewModel(
+        GetLatestListingsUseCase(
+            ListingsRepository(
+                ApiService(client)
+            )
+        )
+    ) // TODO: Implement DI
 
     Scaffold(
         bottomBar = {

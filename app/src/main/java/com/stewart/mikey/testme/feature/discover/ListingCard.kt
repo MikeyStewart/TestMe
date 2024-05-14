@@ -30,7 +30,7 @@ import androidx.compose.ui.tooling.preview.PreviewParameterProvider
 import androidx.compose.ui.unit.dp
 import coil.compose.AsyncImage
 import com.stewart.mikey.testme.R
-import com.stewart.mikey.testme.domain.Listing
+import com.stewart.mikey.testme.core.domain.Listing
 import com.stewart.mikey.testme.ui.theme.BluffOyster600
 import com.stewart.mikey.testme.ui.theme.BluffOyster800
 import com.stewart.mikey.testme.ui.theme.TestMeTheme
@@ -58,7 +58,7 @@ fun ListingCard(listing: Listing) {
         verticalAlignment = Alignment.CenterVertically,
     ) {
         AsyncImage(
-            model = listing.imageUrl,
+            model = listing.pictureHref,
             modifier = Modifier
                 .size(ImageSize)
                 .background(Color.LightGray),
@@ -68,7 +68,7 @@ fun ListingCard(listing: Listing) {
 
         Column {
             Text(
-                text = listing.location,
+                text = listing.region,
                 style = TertiaryTextStyle,
             )
             Text(
@@ -171,17 +171,19 @@ private fun ListingItemPreview(
 class ListingPreviewParameterProvider : PreviewParameterProvider<Listing> {
     override val values = sequenceOf(
         Listing(
-            imageUrl = "https://random.dog/13973-10200-28695.jpg",
-            location = "Gotham City",
+            listingId = 0,
+            pictureHref = "https://random.dog/13973-10200-28695.jpg",
+            region = "Gotham City",
             title = "2012 BATMOBILE SPORT GT ***LOW K'S + ONE CAREFUL OWNER*** BULLETPROOF SPEC",
             isClassified = true,
             priceDisplay = "$15,999.00",
-            buyNowPrice = "$0",
+            buyNowPrice = "0.0",
             hasBuyNow = false
         ),
         Listing(
-            imageUrl = "https://random.dog/13973-10200-28695.jpg",
-            location = "Hyrule",
+            listingId = 1,
+            pictureHref = "https://random.dog/13973-10200-28695.jpg",
+            region = "Hyrule",
             title = "Master Sword !!!LIKE NEW!!!",
             isClassified = false,
             priceDisplay = "$267.50",
@@ -189,12 +191,13 @@ class ListingPreviewParameterProvider : PreviewParameterProvider<Listing> {
             hasBuyNow = true
         ),
         Listing(
-            imageUrl = "https://random.dog/13973-10200-28695.jpg",
-            location = "Kanto Region",
+            listingId = 2,
+            pictureHref = "https://random.dog/13973-10200-28695.jpg",
+            region = "Kanto Region",
             title = "Leaf Stone **UNUSED!**",
             isClassified = false,
             priceDisplay = "$99.00",
-            buyNowPrice = "$0",
+            buyNowPrice = "0.0",
             hasBuyNow = false
         ),
     )

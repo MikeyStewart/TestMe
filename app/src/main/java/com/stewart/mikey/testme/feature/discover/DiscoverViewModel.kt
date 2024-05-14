@@ -2,7 +2,7 @@ package com.stewart.mikey.testme.feature.discover
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.stewart.mikey.testme.domain.GetLatestListingsUseCase
+import com.stewart.mikey.testme.core.domain.GetLatestListingsUseCase
 import com.stewart.mikey.testme.feature.discover.DiscoverUiState.Error
 import com.stewart.mikey.testme.feature.discover.DiscoverUiState.Loading
 import com.stewart.mikey.testme.feature.discover.DiscoverUiState.Success
