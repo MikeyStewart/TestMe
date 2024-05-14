@@ -29,6 +29,8 @@ Inspired by SOLID principles, and Google's [recommendations](https://github.com/
 - Data layer - representation of the network/api
 - Repository Pattern (TODO)
 
+![Screenshot 2024-05-14 at 4 00 30 PM](https://github.com/MikeyStewart/TestMe/assets/22163261/db090319-3b4d-4eff-8115-cb400829257c)
+
 ## Future improvements
 - Dependency injection
 - Network/data layer
